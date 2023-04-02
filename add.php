@@ -1,7 +1,3 @@
-<?php
-include_once('save.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +25,7 @@ include_once('save.php');
     </ul>
   </nav>
   <div id="whole-form-container">
-  <form action="save.php" method="post" id="product_form">
+  <form method="post" id="product_form">
     <div class="form-group">
       <label for="sku">SKU</label>
       <input class="input" type="text" name="sku" id="sku" required />

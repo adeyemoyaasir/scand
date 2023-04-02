@@ -11,7 +11,7 @@ const handleSelection = (value) => {
   };
   
   const isAlphaNumeric = (str) => {
-    const regex = /^[a-zA-Z0-9]+$/;
+    const regex = /^[a-zA-Z0-9 ]+$/;
     return regex.test(str);
   };
   

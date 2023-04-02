@@ -1,3 +1,23 @@
+ <?php
+
+// include_once("crud.php");
+// include_once("book.php");
+// include_once("furniture.php");
+// include_once("dvd.php");
+
+// $crud = new CRUD();
+// $result = $crud->readAll();
+// $objects = [];
+
+// foreach ($result as $row) {
+//   $type = $row["type"];
+//   $product = new $type();
+//   $product->setAttributes($row);
+//   array_push($objects, $product);
+// }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,27 +39,14 @@
         <h1>Product List</h1>
       </li>
       <li>
-        <!-- <a href="./add.php"><button>ADD</button></a> -->
-        <button><a href="./add.php">ADD</a></button>
+       <!-- <a href="./add.php"><button>ADD</button></a> -->
+       <button><a href="./add.php">ADD</a></button>
+
       </li>
       <li><button type="submit" form="items-form">MASS DELETE</button></li>
     </ul>
   </nav>
-  <form action="./delete.php" id="items-form" method="post">
-    <div id="products">
-      <?php foreach ($objects as $object) { ?>
-        <div class="product">
-          <?php
-          echo "<input type=\"checkbox\" class=\"delete-checkbox\" name=\"" . $object->getSKU() . "\" />";
-          echo "<p> SKU : " . $object->getSKU() . "</p>";
-          echo "<p> Name : " . $object->getName() . "</p>";
-          echo "<p> Price : " . $object->getPrice() . " $</p>";
-          echo "<p>" . $object->getDescriptionType() . " : " . $object->getDescription() . "</p>";
-          ?>
-        </div>
-      <?php } ?>
-    </div>
-  </form>
+  
   <script src="./delete.js"></script>
 </body>
 

@@ -3,7 +3,7 @@ class DatabaseConnection {
     private $host = "localhost";
     private $user = "root";
     private $pwd = "";
-    private $dbname = "product_db";
+    private $dbname = "scandiwebdb";
     
     private $conn;
 

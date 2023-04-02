@@ -1,7 +1,8 @@
 <?php
 
-include("config.php");
+include_once ("crud.php");
 
+$crud = new Crud();
 $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
 $decoded = [];
 
